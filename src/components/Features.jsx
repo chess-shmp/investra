@@ -18,4 +18,16 @@ const Features = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f, i) => (
-            <div key={i} className="glass-card rounded-2xl p-
+            <div key={i} className="glass-card rounded-2xl p-6 hover:border-primary/50 transition-colors">
+              <f.icon className="w-10 h-10 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
+              <p className="text-gray-400 text-sm">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Features;
